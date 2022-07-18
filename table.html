@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Таблица цветов</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b8ca9a2db5.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <section class="frame">
+        <header class="header">
+            <h1 class="h1">Таблица цветов</h1>
+            <div class="icon-header">
+                <i class="fa-solid fa-floppy-disk"></i>
+            </div>
+            <div class="icon-header">
+             <i class="fa-solid fa-xmark"></i>
+            </div>
+        </header>
+        <main class="main">
+            <table border="1">
+                <tr>
+                    <th>Цвет</th>
+                    <th>Название</th>
+                    <th>Тип</th>
+                    <th>Код</th>
+                    <th>Изменить</th>
+                    <th>Удалить</th>
+                </tr>
+                <!-- <tr>
+                    <td class="first-column center">
+                        <div class="color-square" style="background-color: #86EAE9;"></div>
+                    </td>
+                    <td class="color-name">Мятное утро</td>
+                    <td class="type-code type-td">base</td>
+                    <td class="type-code code-td">#86EAE9</td>
+                    <td class="center"><i class="fa-solid fa-pencil"></i></td>
+                    <td class="center"><i class="fa-solid fa-trash"></i></td>
+                </tr> -->
+                <!-- <tr>
+                    <td class="first-column center">
+                        <div class="color-square" style="background-color: #B8B2DD;"></div>
+                    </td>
+                    <td class="color-name">Лавандовый пунш</td>
+                    <td class="type-code type-td">main</td>
+                    <td class="type-code code-td">#86EAE9</td>
+                    <td class="center"><i class="fa-solid fa-pencil"></i></td>
+                    <td class="center"><i class="fa-solid fa-trash"></i></td>
+                </tr> -->
+                <!-- <tr>
+                    <td class="first-column center">
+                        <div class="color-square" style="background-color: #37C9EF;"></div>
+                    </td>
+                    <td class="color-name">Лавандовый пунш</td>
+                    <td class="type-code type-td">main</td>
+                    <td class="type-code code-td">#37C9EF</td>
+                    <td class="center"><i class="fa-solid fa-pencil"></i></td>
+                    <td class="center"><i class="fa-solid fa-trash"></i></td>
+                </tr> -->
+            </table>
+            <footer class="footer">
+                <button class="button">Добавить цвет</button>
+            </footer>
+        </section>
+
+        <section class="frame-2 hidden">
+            <header class="header-2">
+                <h1 class="h2">Добавление цвета</h1>
+                <form>
+                    <div class="first">
+                        <label for="field" class="name-of-color">Название цвета</label>
+                        <input class="field" type="text" name="field" id="field" placeholder="Введите название">
+                    </div>
+                </form>
+                <form>
+                    <div class="second">
+                        <label for="field-2" class="color-type">Выберите тип</label> 
+                        <select class="field-2" name="field-2" id="field-2">
+                            <option value="main">Main</option>
+                            <option value="primary">Primary</option>
+                            <option value="secondary">Secondary</option>
+                            <option value="base">Base</option>
+                        </select>
+                    </div>
+                </form>
+            </header>
+            <main class="main-1">
+                <!-- acp-color="#2D1E1E" -->
+                <div class="color-container"
+                    acp-show-rgb="yes"
+                    acp-show-hsl="no"
+                    acp-show-hex="yes"
+                    acp-palette="#D0021B|#F5A623|#F8E71C|#8B572A|#7ED321|#417505|#BD10E0|#9013FE|#4A90E2|#B8E986|#000000|#9B9B9B|#FFFFFF">
+                </div>
+            </main>
+            <footer class="footer-2">
+                <button class="button-2">Добавить</button>
+            </footer>
+        </section>
+
+        <script type="text/javascript" src="picker.js"></script>
+        <script type="text/javascript" src="table.js"></script>
+    </body>
+</html>
